@@ -39,7 +39,7 @@ let generateShop =()=>{
                 <h2>$ ${price}</h2>
                 <div class="buttons">
                     <i class="bi bi-dash-lg"></i>
-                    <div class="quantity">0</div>
+                    <div id=${id} class="quantity">0</div>
                     <i class="bi bi-plus-lg"></i>
                 </div>
             </div>
