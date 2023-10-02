@@ -13,6 +13,16 @@ body{
 font-family: sans-serif;
 }
 
+i {
+    cursor: pointer;
+}
+
+a {
+    text-decoration:none;
+    color:#212529;
+}
+
+
 /**
 * ! Navbar styles are here
 **/
@@ -21,11 +31,13 @@ font-family: sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #212529;
-    color: white;
+    background-color:antiquewhite;
+    color:#212529;
     padding: 25px 60px;
     margin-bottom: 30px;
 }
+
+
 
 .cart{
     position:relative;
