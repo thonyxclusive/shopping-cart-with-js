@@ -16,6 +16,7 @@ let calculation = () => {
         if (basket.length !== 0) {
             // Code to update cart when it's not empty
         } else {
+           // console.log("basket is empty");
             shoppingCart.innerHTML = ``;
             label.innerHTML = `
                 <h2>Cart is Empty</h2>
