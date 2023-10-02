@@ -23,6 +23,6 @@ let calculation = () => {
                     <button class="HomeBtn"> Back to home </button>
                 </a>
             `;
-        }
+        } 
     };
-    generateCartItems ();
+    generateCartItems (); 
