@@ -20,11 +20,8 @@ let calculation = () => {
             label.innerHTML = `
             <h2>Cart is empty</h2>
             <a href="index.html">
-            button.Home
+            <button class="HomeBtn"> Back to home</button>
             </a>
-        
-
-        
-            `
+            `;
         }
     };
