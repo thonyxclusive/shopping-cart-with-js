@@ -34,9 +34,9 @@ let calculation = () => {
                         <i onclick = "decrement(${id})" class="bi bi-dash-lg"></i>
                         <div id=${id} class="quantity">${item}</div>
                         <i onclick = "increment(${id})" class="bi bi-plus-lg"></i>
-             </div>
+                    </div>
                  
-                 <h3></h3>
+                 <h3> £ ${item * search.price}</h3>
                   </div>
                 </div>
                 `;
@@ -54,7 +54,7 @@ let calculation = () => {
     };
     
     generateCartItems (); 
-    
+
     let increment = (id) => {
         let selectedItem = id;
         let search = basket.find((x) => x.id === selectedItem.id);
@@ -67,7 +67,7 @@ let calculation = () => {
         else {
             search.item += 1;
         }
-       // console.log(basket);
+        generateCartItems (); 
         update(selectedItem.id);
         localStorage.setItem("data", JSON.stringify(basket));
     };
