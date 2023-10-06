@@ -111,10 +111,8 @@ let calculation = () => {
             <h2>Thank you for your purchase!</h2>
             <a href="index.html">
                 <button class="HomeBtn"> Back to home </button>
-            </a>
-        `;
+            </a> `;
         basket = [];
-       // generateCartItems ();
         calculation ();
         localStorage.setItem("data", JSON.stringify(basket));
     }
