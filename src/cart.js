@@ -104,6 +104,17 @@ let calculation = () => {
        localStorage.setItem("data", JSON.stringify(basket));
        
     }
+    
+    let checkout = () => {
+        shoppingCart.innerHTML = ``;
+        label.innerHTML = `
+            <h2>Thank you for your purchase!</h2>
+            <a href="index.html">
+                <button class="HomeBtn"> Back to home </button>
+            </a>
+        `;
+    }
+
 
     let clearCart = () => {
         basket = [];
@@ -123,7 +134,7 @@ let calculation = () => {
             //console.log(amount);
             label.innerHTML = `
             <h2> Total Bill: £ ${amount}</h2>
-            <button class="checkout">Checkout</button>
+            <button onclick = "checkout()" class="checkout">Checkout</button>
             <button onclick = "clearCart()" class="removeAll">Clear Cart</button>
             `;
         }
