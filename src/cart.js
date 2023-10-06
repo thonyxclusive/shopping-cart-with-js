@@ -113,6 +113,10 @@ let calculation = () => {
                 <button class="HomeBtn"> Back to home </button>
             </a>
         `;
+        basket = [];
+       // generateCartItems ();
+        calculation ();
+        localStorage.setItem("data", JSON.stringify(basket));
     }
 
 
