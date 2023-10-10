@@ -11,6 +11,10 @@
 
 body{
 font-family: sans-serif;
+  background-image: './images/img-13.jpg';
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 i {
